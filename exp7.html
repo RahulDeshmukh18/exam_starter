@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <exp 7>
+        open the terminal and run cmd -->cd desktop
+        git clone https://github/docker/getting-started-aoo.git
+        run cmd --> cd getting-started-app
+        open the "getting-started-app" folderin the desktop
+        create a new file Dockerfile using VS code and write the code:-
+        #syntax= docker/dockerfile:1
+        From node:18-alpine
+        WORKDIR/app
+        COPY . /app/
+        Run yarn install --praouction
+        CMD ["node", "src/index.js] 
+        EXPOSE 3000
+        
+        in terminal:-run cmd-->docker build -t getting-started .
+                            -->docker run -dp 127.0.0.1:3000:3000 getting-started
+        open the browzer and type 'localhost:3000' 
+
+    
+</body>
+</html>

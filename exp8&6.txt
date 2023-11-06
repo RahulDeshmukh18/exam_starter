@@ -1,0 +1,11 @@
+open the terminal o run cmd:--
+docker pull redis
+docker run -d redis
+docker ps
+docker start [container-id which u will get from the previous cmd output]
+docker images
+docker tag redis [username]/[imagename]:v1.0
+docker images
+docker push [username]/[imagename]:v1.0
+then check in the docker hub
+note:-in bwt the terminal may ask to login
